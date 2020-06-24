@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+body {
+    background: linear-gradient(45deg, #00AAFF, #00FF6C)
+}
+
+.fullCalc{
+    display: grid;
+    grid-template-areas: 
+    "screen screen screen screen"
+    "screen screen screen screen"
+    "ac ac del div"
+    "one two three tims"
+    "four five six plus"
+    "seven eight nine minus"
+    "period zero equals equals";
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(7, 100px);
+    min-height: 100vh;
+    margin-top: 15%;
+    justify-content: center;  
+    
+}
+
+.key{
+    background-color: rgba(148, 229, 255, .75);
+    text-align: center;
+    justify-content: center;
+    border-color: white;
+    font-family: 'Patua One', cursive;
+    font-weight: 600;
+    font-size: 1.5em;
+    
+}
+
+.key:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.screen{
+    background-color: rgba(0, 0, 0, 0.75);
+    grid-area: screen;
+   
+}
+
+.input{
+    font-family: 'Patua One', cursive;
+    color: white;
+    font-size: 3em;
+    text-align: end;
+    padding: 5px;
+    z-index: 4;
+    position: relative;
+    top: 40px;
+    right: 15px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.calculation{
+    font-family: 'Patua One', cursive;
+    color: white;
+    font-size: 1.5em;
+    text-align: end;
+    padding: 5px;
+    z-index: 3;
+    position: relative;
+    right: 15px;
+    top: 10px;
+    color: rgba(255, 255, 255, .7);
+}
+
+.ac-key{
+    grid-area: ac;
+   
+
+}
+
+.del-key{
+    grid-area: del;
+}
+
+.divide-key{
+    grid-area: div;
+}
+
+.key-1{
+    grid-area: one;
+
+}
+
+.key-2{
+    grid-area: two;
+}
+
+.key-3{
+    grid-area: three;
+}
+
+.multiply-key{
+    grid-area: tims;
+}
+
+.key-4{
+    grid-area: four;
+}
+
+.key-5{
+    grid-area: five;
+}
+
+.key-6{
+    grid-area: six;
+}
+
+.plus-key{
+    grid-area: plus;
+}
+
+.key-7{
+    grid-area: seven;
+}
+
+.key-8{
+    grid-area: eight;
+}
+
+.key-9{
+    grid-area: nine;
+}
+
+.minus-key{
+    grid-area: minus;
+}
+
+
+.period-key{
+    grid-area: period;
+}
+
+.key-0{
+    grid-area: zero;
+}
+
+.equals-key{
+    grid-area: equals;
+}
+
